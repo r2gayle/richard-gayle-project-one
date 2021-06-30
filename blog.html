@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://kit.fontawesome.com/b9c5387262.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body class="blog-body">
+    <header id="blog-head-nav" class="blog-header">
+        <div class="wrapper">
+            <nav>
+                <ul class="blog-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <label for="slide"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="slide" name="slide">
+                <ul class="sliding-ul blog-slide">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <h1>blog</h1> 
+        </div>
+    </header>
+
+    <main class="blog-main">
+        <div class="top-section">
+            <aside>
+                <div class="img-left">
+                    <img src="./styles/the-restaurant-mall-assets/blog-side-image.jpg" alt="salmon with vegetables on top and beneath in a dark broth and large white bowl">
+                </div>
+                <div class="img-left-text">
+                    <h5>featured restaurants</h5>
+                    <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. Find out more.</p>
+                    <h5>recent posts</h5>
+                    <ul class="posts">
+                        <li>Donec facilisis tortor ut</li>
+                        <li>Augue lacinia at viverra</li>
+                        <li>Semper sed sapien metus</li>
+                        <li>Sceleris nec pharetra id</li>
+                    </ul>
+                </div>
+            </aside>
+    
+            <section>
+                <div class="img-right">
+                    <img src="./styles/the-restaurant-mall-assets/blog-post-image.jpg" alt="A restaurant server setting a table with red flowers.">
+                </div>
+                <article>
+                    <h2>employment opportunities</h2>
+                    <p class="date">
+                        Monday October 30, 2019 by Sulaire
+                    </p>
+                    <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
+                    <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagitttis ante venenatis egesras quis vel justo. Maecenassemper suscipot nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutoat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl henrerit graida. Donec vehicula rhoncus mattis. Mauris diginissim semper mattis. Fusce porttitora mi at suscipit. </p>
+                    <p>Praesent facillisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctis. Aenean tincidunt sed dui aliquam vehicula.</p>
+                </article>
+            </section>
+        </div>
+        <div class="comment-section">
+            <div class="wrapper">
+                <div class="comments">
+                    <h3>comments:</h3>
+                            <div class="comment-1">
+                                <div class="comment-1-img">
+                                    <img src="./styles/the-restaurant-mall-assets/comment-1.jpg" alt="Head shot of a young asian women">
+                                </div>
+                                <div class="comment-1-text">
+                                    <p class="comment-date">Tuesday October 9th, 2019 by Ali</p>
+                                    <p>Fusce vehiculadolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultricies. Donec eusismod scelerisque ligula. Maecenas eu varius risus.</p>
+                                </div>
+                            </div>
+                            <div class="comment-2">
+                                <div class="comment-2-img">
+                                    <img src="./styles/the-restaurant-mall-assets/comment-2.jpg" alt="Head shot of a young black women">
+                                </div>
+                                <div class="comment-2-text">
+                                    <p class="comment-date">Wednesday October 10th, 2019 by Lisa</p>
+                                    <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultricies. Donec eusismod scelerisque ligula.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="#" class="blog-form">
+                        <div class="name-email-container">
+                            <div class="name-container">
+                                <label class="sr-only" for="commentName">Name</label>
+                                <input type="text" id="commentName" name="commentName" placeholder="Name">
+                            </div>
+                            <div class="email-container">
+                                <label class="sr-only" for="commentEmail">Email</label>
+                                <input type="commentEmail" id="commentEmail" name="commentEmail" placeholder="Email address">
+                            </div>
+                        </div>
+            
+                        <div class="message-container">
+                            <label class="sr-only" for="commentMessage">Message</label>
+                            <textarea name="commentMessage" id="commentMessage" placeholder="Comment"></textarea>
+                        </div>
+                            
+                        <button type="submit">POST COMMENT</button>
+                    </form>
+                </div>
+            
+            
+            </div>        
+        </div>      
+    </main>
+
+    <footer>
+        <p>Copyright © 2021 Juno College </p>
+    </footer>
+</body>
+</html>

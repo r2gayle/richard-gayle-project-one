@@ -1,0 +1,335 @@
+// nav styles
+
+.contact-ul li:nth-child(1) a {
+    padding-left: 0px;
+}
+
+.contact-ul li:nth-child(4) {
+    position: relative;
+}
+
+.contact-ul li:nth-child(4)::after {
+    display: block;
+    content : '';
+    position: absolute;
+    border-bottom: 3px solid $colorOne;
+    width: 75px;
+    left: 15px;
+    bottom: -5px;
+}
+
+#contact-head-nav nav label {
+    display: none;
+}
+
+
+// header styles
+
+.contact-header {
+    background-image: url(../styles/the-restaurant-mall-assets/contact-header.jpg);
+    height: 90vh;
+}
+
+.contact-header h1 {
+    width: 650px;
+}
+
+.information {
+    position: relative;
+    display: flex;
+justify-content: space-between;
+}
+
+// media stlye 
+
+.media > * {
+    color: $colorOne;
+}
+
+.media {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    padding-top: 120px;
+    margin-bottom: 25px;
+}
+
+.media .fab:nth-child(-n+3) {
+    margin-right: 3%; 
+}
+
+.mail-tel p:first-child {
+    margin-bottom: 30px;
+}
+
+.main-content, input, textarea {
+    background-color: $colorFour;
+}
+
+
+
+// form styles 
+
+.main-content form {
+    height: 540px;
+    width: 880px;  
+    box-shadow: 30px 30px 0px -10px  $colorOne;
+    position: relative;
+    top: 70px;
+    left: 50px;
+    padding: 80px;
+    flex: 0 2 auto;
+    margin-top: -17%;
+    margin-bottom: 15%;
+}
+
+input, textarea, .main-content form {
+    background-color: $colorThree;
+}
+
+input, textarea {
+    padding: 20px;
+}
+
+input {
+    border: none;
+    border-bottom: 3px solid $colorOne;
+    height: 30px;
+}
+
+textarea {
+    border: 3px solid $colorOne;
+    height: 230px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: white;
+    // padding-bottom: 20px;
+}
+
+.name-container, .email-container, .message-container, .name-email-container {
+    display: flex;
+}
+
+.name-email-container {
+    width: 720px;
+}
+
+.name-container, .email-container, .message-container {
+    flex-direction: column;
+}
+
+.name-container {
+    width: 40%;
+}
+
+.main-content .name-container {
+    margin-right: 2%;
+}
+
+.email-container {
+    margin-left: 15px;
+    width: 60%;
+}
+
+.message-container {
+    margin-top: 25px;
+    width: 720px;
+}
+
+.main-content form button {
+    background-color: $colorOne;
+    width: 720px;
+    margin-top: 50px;
+}
+
+textarea {
+    resize: none;
+}
+
+
+// media
+
+@media(max-width: 1112px) {
+    .main-content form {
+        width: 690px;
+        left: -40px;
+    }
+
+    .name-email-container, .message-container, .main-content form button{
+        width: 530px;
+    }
+
+    .message-container {
+        margin-top: 45px;
+        width: 530px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .contact-header {
+        height: 59vh;
+    }
+
+    .main-content form {
+        width: 640px;
+        left: -15px;
+    }
+}
+
+@media(max-width: 834px) {
+    .information {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        width: 50%;
+    }
+
+    .main-content form {
+        position: static;
+        margin-top: 80px;
+        width: 100%;
+    }
+
+    .name-email-container, .message-container, .main-content form button {
+        width: 635px;
+    }
+}
+
+@media(max-width: 768px) {
+    .contact-header {
+        height: 25vh;
+    }
+
+    .contact-info {
+        margin-top: -10%;
+    }
+
+    .name-email-container, .message-container, .main-content form button {
+        width: 580px;
+    }
+}
+
+@media(max-width: 736px) {
+    .contact-header {
+        height: 75vh;
+    }
+
+    element {
+        font-size: 3rem;
+    }
+
+    .name-email-container, .message-container, .main-content form button {
+        width: 545px;
+    }
+
+    .main-content form {
+        padding: 75px;
+    }
+}
+
+@media(max-width: 667px) {
+    .main-content form {
+        padding: 48px;
+    }
+}
+
+@media(max-width: 414px) {
+    .contact-header {
+        height: 50vh;
+    }
+
+    .main-content .wrapper {
+        overflow-x: hidden;
+    }
+
+    .contact-header h1 {
+        width: 375px;
+        top: 60px;
+        right: 0;
+        font-size: 2.5rem;
+    }
+
+    .contact-info {
+        width: 75%;
+    }
+
+    .name-email-container {
+        flex-direction: column;
+    }
+
+    .email-container {
+        margin-left: 0px;
+        margin-top: 5%;
+    }
+
+    .name-container, .email-container {
+        width: 55%;
+    }
+
+    .message-container, .main-content form button {
+        width: 100%;
+    }
+
+    .main-content form button {
+        margin-top: 35px;
+    }
+    
+}
+
+@media (max-width: 375px) {
+    .contact-header {
+        height: 45vh;
+    }
+
+    .contact-header h1 {
+        width: 65%;
+    }
+
+    .contact-info {
+        width: 85%;
+    }
+
+    .name-container, .email-container {
+        width: 47%;
+    }
+}
+
+@media (max-width: 320px) {
+    #contact-head-nav nav label {
+        display: inline-block;
+    }
+
+    .contact-ul {
+        display: none;
+    }
+
+    .contact-header input[type="checkbox"]:checked + .sliding-ul {
+        left: 15%;
+        top: 4%;
+    }
+
+    .contact-header .sliding-ul a {
+        color: white;
+    }
+
+    .contact-header h1 {
+        position: relative;
+        top: 10px;
+        font-size: 2.3rem;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .media {
+        padding-top: 75px;
+    }
+
+    .name-container, .email-container {
+        width: 38%;
+    }
+    
+}
