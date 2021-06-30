@@ -210,6 +210,11 @@ article :nth-child(2) {
     margin-bottom: 5%;
 }
 
+.blog-form .name-email-container, .blog-form .message-container, .blog-form button {
+    width: 80%;
+}
+
+
 .blog-form .name-container {
     margin-right: 5%;
 }
@@ -222,7 +227,6 @@ input::placeholder, textarea::placeholder  {
 }
 
 .blog-form button {
-    width: 720px;
     background-color: $colorOne;
     margin: 50px 0px 80px 0px;
 }
@@ -254,10 +258,6 @@ input::placeholder, textarea::placeholder  {
 
     .blog-form {
         margin-left: 19%;
-    }
-
-    .blog-form button {
-        width: 530px;
     }
 }
 
@@ -329,11 +329,6 @@ input::placeholder, textarea::placeholder  {
     .blog-form {
         margin-left: 12%;
     }
-
-    .blog-form button {
-        width: 635px;
-    }
-
 }
 
 @media (max-width: 768px) {
@@ -356,10 +351,6 @@ input::placeholder, textarea::placeholder  {
 
     .blog-form {
         margin-left: 7.6%;
-    }
-
-    .blog-form .name-email-container, .blog-form .message-container, .blog-form button {
-        width: 650px;
     }
 }
 
@@ -458,9 +449,35 @@ input::placeholder, textarea::placeholder  {
         justify-content: space-between;
         padding-right: 2%;
     }
+}
 
-    .blog-form .name-email-container, .blog-form .message-container, .blog-form button {
-        width: 590px;
+@media (max-width: 640px) {
+    .blog-form {
+        margin-top: 400px;
+    }
+
+    .blog-form .name-email-container {
+        flex-direction: column;
+    }
+
+    .blog-form .name-container, .blog-form .email-container {
+        width: 115%;
+    }
+
+    .blog-form .name-container {
+        margin-bottom: 10%;
+    }
+
+    .blog-form  .email-container {
+        margin-left: 0px;
+    }
+
+    .blog-form .message-container {
+        margin-top: 10%;
+    }
+
+    .blog-form .message-container, .blog-form button {
+        width: 91%;
     }
 }
 
@@ -523,34 +540,6 @@ input::placeholder, textarea::placeholder  {
         top: 540px;
         left: 0px;
     }
-
-    .blog-form {
-        margin-top: 400px;
-    }
-
-    .blog-form .name-email-container {
-        flex-direction: column;
-    }
-
-    .blog-form .name-container, .blog-form .email-container {
-        width: 60%;
-    }
-
-    .blog-form .name-container {
-        margin-bottom: 5%;
-    }
-
-    .blog-form  .email-container {
-        margin-left: 0px;
-    }
-
-    .blog-form .message-container {
-        margin-top: 10%;
-    }
-
-    .blog-form .message-container, .blog-form button {
-        width: 91%;
-    }
 }
 
 @media (max-width: 375px) {
@@ -598,10 +587,6 @@ input::placeholder, textarea::placeholder  {
     .blog-form {
         margin-top: 470px;
     }
-
-    .blog-form .name-container, .blog-form .email-container {
-        width: 54%;
-    }
 }
 
 @media (max-width: 320px) {
@@ -635,10 +620,6 @@ input::placeholder, textarea::placeholder  {
     .top-section section {
         top: 90px;
         margin-bottom: 45%;
-    }
-
-    .blog-form .name-container, .blog-form .email-container {
-        width: 46%;
     }
 
     .comment-1-text, .comment-2-text {
