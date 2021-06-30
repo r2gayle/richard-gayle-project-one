@@ -505,7 +505,7 @@ input::placeholder, textarea::placeholder {
   }
 
   .blog-form {
-    margin-left: 25%;
+    margin-left: 15%;
   }
 }
 @media (max-width: 834px) {
@@ -516,7 +516,7 @@ input::placeholder, textarea::placeholder {
   }
 
   .blog-header input[type=checkbox]:checked + .sliding-ul {
-    left: 11%;
+    left: 6%;
     top: 5%;
   }
 
@@ -626,7 +626,7 @@ input::placeholder, textarea::placeholder {
   }
 
   .blog-form {
-    margin-left: 6.2%;
+    margin-left: 19.2%;
   }
 }
 @media (max-width: 667px) {
@@ -699,6 +699,10 @@ input::placeholder, textarea::placeholder {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-right: 2%;
+  }
+
+  .blog-form {
+    margin-left: 13%;
   }
 }
 @media (max-width: 640px) {
@@ -839,6 +843,10 @@ input::placeholder, textarea::placeholder {
   .blog-form {
     margin-top: 470px;
   }
+
+  .blog-form {
+    margin-left: 9.2%;
+  }
 }
 @media (max-width: 320px) {
   .blog-header {
@@ -917,7 +925,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .contact-header h1 {
-  width: 650px;
+  width: 90%;
 }
 
 .information {
@@ -1009,23 +1017,23 @@ textarea {
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: white;
+  color: #FFFFFF;
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
-  color: white;
+  color: #FFFFFF;
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  color: white;
+  color: #FFFFFF;
 }
 
 input::-ms-input-placeholder, textarea::-ms-input-placeholder {
-  color: white;
+  color: #FFFFFF;
 }
 
 input::placeholder, textarea::placeholder {
-  color: white;
+  color: #FFFFFF;
 }
 
 .name-container, .email-container, .message-container, .name-email-container {
@@ -1035,7 +1043,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .name-email-container {
-  width: 720px;
+  width: 100%;
 }
 
 .name-container, .email-container, .message-container {
@@ -1065,7 +1073,7 @@ input::placeholder, textarea::placeholder {
 
 .main-content form button {
   background-color: #FFD300;
-  width: 720px;
+  width: 100%;
   margin-top: 50px;
 }
 
@@ -1074,15 +1082,6 @@ textarea {
 }
 
 @media (max-width: 1112px) {
-  .main-content form {
-    width: 690px;
-    left: -40px;
-  }
-
-  .name-email-container, .message-container, .main-content form button {
-    width: 530px;
-  }
-
   .message-container {
     margin-top: 45px;
     width: 530px;
@@ -1122,22 +1121,14 @@ textarea {
     margin-top: 80px;
     width: 100%;
   }
-
-  .name-email-container, .message-container, .main-content form button {
-    width: 635px;
-  }
 }
 @media (max-width: 768px) {
   .contact-header {
-    height: 25vh;
+    height: 30vh;
   }
 
   .contact-info {
     margin-top: -10%;
-  }
-
-  .name-email-container, .message-container, .main-content form button {
-    width: 580px;
   }
 }
 @media (max-width: 736px) {
@@ -1149,10 +1140,6 @@ textarea {
     font-size: 3rem;
   }
 
-  .name-email-container, .message-container, .main-content form button {
-    width: 545px;
-  }
-
   .main-content form {
     padding: 75px;
   }
@@ -1160,6 +1147,30 @@ textarea {
 @media (max-width: 667px) {
   .main-content form {
     padding: 48px;
+  }
+}
+@media (max-width: 581px) {
+  .name-container, .email-container {
+    width: 100%;
+  }
+
+  .name-email-container, .email-container {
+    width: 100%;
+  }
+
+  .main-content .name-container {
+    margin-bottom: 10%;
+  }
+
+  .name-email-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .email-container {
+    margin-left: 0px;
   }
 }
 @media (max-width: 414px) {
@@ -1172,7 +1183,6 @@ textarea {
   }
 
   .contact-header h1 {
-    width: 375px;
     top: 60px;
     right: 0;
     font-size: 2.5rem;
@@ -1195,7 +1205,7 @@ textarea {
   }
 
   .name-container, .email-container {
-    width: 55%;
+    width: 100%;
   }
 
   .message-container, .main-content form button {
@@ -1218,29 +1228,26 @@ textarea {
   .contact-info {
     width: 85%;
   }
-
-  .name-container, .email-container {
-    width: 47%;
-  }
 }
-@media (max-width: 320px) {
-  #contact-head-nav nav label {
-    display: inline-block;
-  }
-
+@media (max-width: 350px) {
   .contact-ul {
     display: none;
   }
 
+  #contact-head-nav nav label {
+    display: inline-block;
+  }
+
   .contact-header input[type=checkbox]:checked + .sliding-ul {
-    left: 15%;
+    left: 30%;
     top: 4%;
   }
 
   .contact-header .sliding-ul a {
     color: white;
   }
-
+}
+@media (max-width: 320px) {
   .contact-header h1 {
     position: relative;
     top: 10px;
@@ -1253,10 +1260,6 @@ textarea {
 
   .media {
     padding-top: 75px;
-  }
-
-  .name-container, .email-container {
-    width: 38%;
   }
 }
 h1, h2, h3, h4, h5, p, ul, button, nav {
@@ -1724,13 +1727,14 @@ footer p {
   padding: 5px 0px;
 }
 
+@media (max-width: 1350px) {
+  .location h2, .blog h2, .community h2, .touch h2 {
+    margin-left: 0%;
+  }
+}
 @media (max-width: 1131px) {
   .try-text h3 {
     font-size: calc(1.8rem + 0.2vw);
-  }
-
-  .location h2, .blog h2, .community h2, .touch h2 {
-    margin-left: 0%;
   }
 }
 @media (max-width: 1110px) {
@@ -1996,6 +2000,23 @@ footer p {
     font-size: 3rem;
   }
 }
+@media (max-width: 568px) {
+  .img-trio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .img-1, .img-2, .img-3 {
+    width: 100%;
+  }
+
+  .img-1, .img-2 {
+    margin-right: 50px;
+    margin-bottom: 40px;
+  }
+}
 @media (max-width: 475px) {
   .home-header h1 {
     font-size: calc(2rem + 0.5vw);
@@ -2037,22 +2058,6 @@ footer p {
   .img-badge {
     top: 70%;
     width: 80%;
-  }
-
-  .img-trio {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .img-1, .img-2, .img-3 {
-    width: 100%;
-  }
-
-  .img-1, .img-2 {
-    margin-right: 50px;
-    margin-bottom: 40px;
   }
 }
 @media (max-width: 390px) {

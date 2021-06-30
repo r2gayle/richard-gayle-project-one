@@ -267,7 +267,7 @@ input::placeholder, textarea::placeholder  {
     }
 
     .blog-form {
-        margin-left: 25%;
+        margin-left: 15%;
     }
 }
 
@@ -279,7 +279,7 @@ input::placeholder, textarea::placeholder  {
     }
 
     .blog-header input[type="checkbox"]:checked + .sliding-ul {
-        left: 11%;
+        left: 6%;
         top: 5%;
     }
 
@@ -388,7 +388,7 @@ input::placeholder, textarea::placeholder  {
     }
 
     .blog-form {
-        margin-left: 6.2%;
+        margin-left: 19.2%;
     }
 } 
 
@@ -448,6 +448,10 @@ input::placeholder, textarea::placeholder  {
         flex-wrap: wrap;
         justify-content: space-between;
         padding-right: 2%;
+    }
+
+    .blog-form {
+        margin-left: 13%;
     }
 }
 
@@ -586,6 +590,10 @@ input::placeholder, textarea::placeholder  {
 
     .blog-form {
         margin-top: 470px;
+    }
+
+    .blog-form {
+        margin-left: 9.2%;
     }
 }
 

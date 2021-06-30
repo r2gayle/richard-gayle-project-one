@@ -449,14 +449,16 @@ footer p {
 
 // media Qeries
 
+@media (max-width: 1350px) {
+  .location h2, .blog h2, .community h2, .touch h2  {
+    margin-left: 0%;
+  }
+}
+
 @media (max-width: 1131px) {
   .try-text h3 {
     font-size: calc(1.8rem + 0.2vw);
   }
-
-  .location h2, .blog h2, .community h2, .touch h2 {
-    margin-left: 0%;
-}
 }
 
 @media (max-width: 1110px) {
@@ -715,6 +717,21 @@ footer p {
   }
 }
 
+@media (max-width: 568px) {
+  .img-trio {
+    flex-direction: column;
+  }
+  
+  .img-1, .img-2, .img-3 {
+    width: 100%
+  }
+
+  .img-1, .img-2 {
+    margin-right: 50px;
+    margin-bottom: 40px;
+  }
+}
+
 
 @media (max-width: 475px) {
   .home-header h1 {
@@ -751,20 +768,6 @@ footer p {
   .img-badge {
     top: 70%;
     width: 80%;
-  }
-
-  .img-trio {
-    flex-direction: column;
-
-  }
-  
-  .img-1, .img-2, .img-3 {
-    width: 100%
-  }
-
-  .img-1, .img-2 {
-    margin-right: 50px;
-    margin-bottom: 40px;
   }
 }
 
