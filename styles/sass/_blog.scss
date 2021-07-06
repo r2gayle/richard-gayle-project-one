@@ -24,15 +24,15 @@ h5 {
 
 // nav styles
 
-.blog-ul li:nth-child(1) a {
+.standard-ul li:nth-child(1) a {
     padding-left: 0px;
 }
 
-.blog-ul li:nth-child(3) {
+.blog-header .standard-ul li:nth-child(3) {
     position: relative;
 }
 
-.blog-ul li:nth-child(3)::after {
+.blog-header .standard-ul li:nth-child(3)::after {
     display: block;
     content : '';
     position: absolute;
@@ -283,7 +283,7 @@ input::placeholder, textarea::placeholder  {
         top: 5%;
     }
 
-    .blog-ul {
+    .standard-ul {
         display: none;
     }
 
