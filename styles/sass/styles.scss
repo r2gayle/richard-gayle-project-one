@@ -131,6 +131,11 @@ ul {
     bottom: -5px;
 }
 
+.standard-ul a:hover {
+  color: $colorOne;
+  transition: 0.4s;
+}
+
 // Hamburger menu styles 
 
 .burger-menu div{
@@ -143,46 +148,6 @@ ul {
 .burger-menu {
   display: none;
 }
-
-// .sliding-ul, input[type="checkbox"], nav label {
-//   display: none;
-// }
-
-// .sliding-ul {
-//   width: 25%;
-//   position: fixed;
-//   left:-25%;
-//   top: 7%;
-//   height: 110px;
-//   transition: left 0.3s;
-//   flex-direction: column;
-//   text-align: end;
-// }
-
-// .sliding-ul a {
-//   display: inline-block;
-// 	padding: 3%;
-// 	width: 100%;
-//   transition: background-color 0.3s;
-//   color: $colorTwo;
-// }
-
-// .sliding-ul a:hover {
-// 	color: $colorOne;
-// }
-
-// nav label {
-//   position: fixed; 
-//   top: 5px;
-//   left: 20px;
-//   padding: 5px;
-//   font-size: 2rem;
-//   color: $colorTwo;
-// }
-
-// input[type="checkbox"]:checked + .sliding-ul {
-// 	left: 0;
-// }
 
 // header style
 
@@ -561,22 +526,6 @@ footer p {
 }
 
 @media (max-width: 995px) {
-  // nav label, .sliding-ul {
-  //   display: inline-block;
-  // }
-
-  // nav label {
-  //   position: absolute;  
-  // }
-
-  // .sliding-ul {
-  //   z-index: 20;
-  // }
-
-  // .standard-ul {
-  //   display: none;
-  // }
-
   .standard-ul {
     position: absolute;
     left: 0px;
@@ -589,7 +538,7 @@ footer p {
     justify-content: space-around;
     top: 100px;
     transform: translateX(-100%);
-    transition: transform 0.3s ease-in;
+    transition: transform 0.4s ease-in;
   }
 
   .burger-menu {
@@ -602,10 +551,25 @@ footer p {
   .standard-ul li:nth-child(1)::after, .blog-ul li:nth-child(3)::after, .contact-ul li:nth-child(4)::after {
     display: none;
   }
-}
 
-.burger-show {
-  transform: translateX(0%);
+  .burger-show {
+    transform: translateX(0%);
+  }
+
+  .line-1-active {
+    transform: rotate(45deg) translate(-1px, 0.9px);
+    transition: 0.4s;
+  }
+  
+  .line-2-active {
+    transform: rotate(-45deg) translate(6px, -7px);
+    transition: 0.4s;
+  }
+  
+  .line-3-active {
+    opacity: 0;
+    transition: 0.4s;
+  }
 }
 
 @media (max-width: 960px) {
@@ -843,7 +807,6 @@ footer p {
     font-size: calc(2rem + 3vw);
   }
 }
-
 
 @media (max-width: 320px) {
   .home-header h1 {

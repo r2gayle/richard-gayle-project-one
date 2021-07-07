@@ -520,10 +520,6 @@ input::placeholder, textarea::placeholder {
     top: 5%;
   }
 
-  .standard-ul {
-    display: none;
-  }
-
   .blog-header {
     height: 25vh;
   }
@@ -1230,10 +1226,6 @@ textarea {
   }
 }
 @media (max-width: 350px) {
-  .standard-ul {
-    display: none;
-  }
-
   #contact-head-nav nav label {
     display: inline-block;
   }
@@ -1241,10 +1233,6 @@ textarea {
   .contact-header input[type=checkbox]:checked + .sliding-ul {
     left: 30%;
     top: 4%;
-  }
-
-  .contact-header .sliding-ul a {
-    color: white;
   }
 }
 @media (max-width: 320px) {
@@ -1391,6 +1379,12 @@ ul {
   width: 54px;
   left: 0px;
   bottom: -5px;
+}
+
+.standard-ul a:hover {
+  color: #FFD300;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .burger-menu div {
@@ -1814,10 +1808,10 @@ footer p {
     top: 100px;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
-    -webkit-transition: -webkit-transform 0.3s ease-in;
-    transition: -webkit-transform 0.3s ease-in;
-    transition: transform 0.3s ease-in;
-    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+    -webkit-transition: -webkit-transform 0.4s ease-in;
+    transition: -webkit-transform 0.4s ease-in;
+    transition: transform 0.4s ease-in;
+    transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
   }
 
   .burger-menu {
@@ -1830,12 +1824,32 @@ footer p {
   .standard-ul li:nth-child(1)::after, .blog-ul li:nth-child(3)::after, .contact-ul li:nth-child(4)::after {
     display: none;
   }
-}
-.burger-show {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-}
 
+  .burger-show {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+
+  .line-1-active {
+    -webkit-transform: rotate(45deg) translate(-1px, 0.9px);
+            transform: rotate(45deg) translate(-1px, 0.9px);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .line-2-active {
+    -webkit-transform: rotate(-45deg) translate(6px, -7px);
+            transform: rotate(-45deg) translate(6px, -7px);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .line-3-active {
+    opacity: 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+}
 @media (max-width: 960px) {
   .touch h2 {
     font-size: calc(2rem + 0.1vw);

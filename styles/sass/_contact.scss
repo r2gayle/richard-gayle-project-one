@@ -311,10 +311,6 @@ textarea {
 }
 
 @media (max-width: 350px) {
-    .standard-ul {
-        display: none;
-    }
-
     #contact-head-nav nav label {
         display: inline-block;
     }
@@ -322,10 +318,6 @@ textarea {
     .contact-header input[type="checkbox"]:checked + .sliding-ul {
         left: 30%;
         top: 4%;
-    }
-
-    .contact-header .sliding-ul a {
-        color: white;
     }
 }
 
