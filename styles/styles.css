@@ -1392,6 +1392,8 @@ ul {
   height: 4px;
   background-color: #FFFFFF;
   margin: 5px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .burger-menu {
@@ -1819,6 +1821,7 @@ footer p {
     position: relative;
     top: -40px;
     cursor: pointer;
+    width: 25%;
   }
 
   .standard-ul li:nth-child(1)::after, .blog-ul li:nth-child(3)::after, .contact-ul li:nth-child(4)::after {
